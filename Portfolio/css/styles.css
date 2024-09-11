@@ -1,6 +1,167 @@
-body{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: rgb(25, 24, 24);
 }
 
+:root {
+  --paragraph-grey-color: gray;
+  --default-grey-color: gray;
+  --transparent-color: none;
+  --white-color: white;
+}
+
+/* Main/global styles */
+main {
+  width: 100%;
+  height: auto;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Nav bar section styles */
+.hero {
+  width: 100vw;
+  background-color: black;
+}
+
+#navBar {
+  width: 100%;
+  height: auto;
+}
+
+#navBar .nav_container {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: white; */
+  padding: 2rem 0rem;
+}
+
+#navBar .nav_container .logo-sec {
+  /* width: 100%;  */
+}
+
+#navBar .nav_container .logo-sec img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+#navBar .nav_container .logo-sec img:hover {
+  box-shadow: 5px 10px 80px 5px yellow;
+  transition: all 0.5s;
+}
+
+#navBar .nav_container .pages_nav_sec ul {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+}
+
+#navBar .nav_container .pages_nav_sec ul li a {
+  text-decoration: none;
+  color: var(--default-grey-color);
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+#navBar .nav_container .pages_nav_sec ul li a:hover {
+  color: white;
+  transition: all 0.8s;
+}
+
+#navBar .nav_container .hire_me_btn button {
+  padding: 1rem 2rem;
+  background-color: var(--transparent-color);
+  border: 1px solid grey;
+  border-radius: 0.5rem;
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+#navBar .nav_container .hire_me_btn button:hover {
+  background-color: rgba(128, 128, 128, 0.512);
+  transition: all 0.7s;
+}
+
+#navBar .nav_container .hire_me_btn button i {
+  padding-left: 0.5rem;
+}
+
+/* header section/Hero section */
+#header {
+  width: 100%;
+}
+
+#header .header_container {
+  width: 90%;
+  margin: auto;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+#header .header_container .user_data {
+  width: 100%;
+  /* background-color: blue; */
+  padding-top: 3rem;
+}
+
+#header .header_container .user_data .user_name .title {
+  font-size: 2.5rem;
+  line-height: 0.5;
+}
+#header .header_container .user_data .user_name .name {
+  font-size: 3.5rem;
+  line-height: 0.7;
+}
+
+#header .header_container .user_data .user_name .user_roles {
+  padding: 1rem 0rem;
+  color: var(--default-grey-color);
+  width: 50%;
+}
+
+#header .header_container .user_data .user_name .resume_download {
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid gray;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+#header .header_container .user_data .user_name .resume_download:hover {
+  background-color: rgba(128, 128, 128, 0.263);
+  transition: all 0.5s;
+}
+
+#header .header_container .user_profile {
+  width: 100%;
+  background-color: rgb(0, 30, 255);
+}
+
+#header .header_container .user_profile img {
+  width: 100%;
+  height: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+/* Service section */
+#services{
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    background-color: red;
+}

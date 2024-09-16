@@ -2,7 +2,7 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: rgb(25, 24, 24);
+  background-color: #282a37;
 }
 
 :root {
@@ -15,17 +15,17 @@ body {
 /* Main/global styles */
 main {
   width: 100%;
-  height: auto;
+  /* height: auto; */
 }
 
 * {
   font-family: "Poppins", sans-serif;
 }
 
-/* Nav bar section styles */
+/* HERO SECTION START HERE */
 .hero {
   width: 100vw;
-  background-color: black;
+  background-color: #252734;
 }
 
 #navBar {
@@ -42,10 +42,6 @@ main {
   align-items: center;
   /* background-color: white; */
   padding: 2rem 0rem;
-}
-
-#navBar .nav_container .logo-sec {
-  /* width: 100%;  */
 }
 
 #navBar .nav_container .logo-sec img {
@@ -148,20 +144,358 @@ main {
 
 #header .header_container .user_profile {
   width: 100%;
-  background-color: rgb(0, 30, 255);
+  /* background-color: rgb(0, 30, 255); */
 }
 
 #header .header_container .user_profile img {
   width: 100%;
   height: 100%;
-    position: relative;
-    bottom: 0;
+  position: relative;
+  bottom: -0.5rem;
 }
 
 /* Service section */
-#services{
-    width: 90%;
-    height: 300px;
-    margin: auto;
-    background-color: red;
+#services {
+  width: 90%;
+  height: 300px;
+  margin: auto;
+  /* background-color: red; */
 }
+
+/* HERO SECTION END HERE */
+
+/* SERVICE SECTION START HERE */
+#services {
+  width: 100%;
+  height: auto;
+  margin-top: 5rem;
+  /* background-color: yellow; */
+}
+
+#services .service_container {
+  width: 90%;
+  margin: auto;
+}
+
+#services .service_container .service_header {
+  width: 100%;
+}
+
+#services .service_container .service_header .para {
+  color: var(--default-grey-color);
+  padding: 1.5rem 0rem;
+}
+
+#services .service_container .service_header .heading {
+  color: white;
+  font-size: 3rem;
+  line-height: 0.7;
+}
+
+#services .service_container .service_card_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* background-color: wheat; */
+}
+
+#services .service_container .service_card_container .service_card {
+  background-color: #252734;
+  padding: 3rem;
+  width: 50%;
+  color: white;
+  border-radius: 0.5rem;
+  margin: 2rem;
+}
+
+#services .service_container .service_card_container .service_card i {
+  font-size: 3rem;
+}
+
+#services .service_container .service_card_container .service_card p {
+  color: var(--default-grey-color);
+}
+
+#services .service_container .service_card_container .service_card .point_icon {
+  margin-right: 1rem;
+}
+/* SERVICE SECTION END HERE */
+
+/* SKILLS SECTION START HERE */
+#skills {
+  width: 100%;
+  /* background-color: red; */
+  padding: 2rem 0rem;
+}
+
+#skills .skill_container {
+  width: 90%;
+  margin: auto;
+}
+#skills .skill_container .heading_box {
+  width: 100%;
+}
+
+#skills .skill_container .heading_box .slogan {
+  color: var(--default-grey-color);
+  padding: 1.5rem 0rem;
+}
+
+#skills .skill_container .heading_box .heading {
+  color: white;
+  font-size: 3rem;
+  line-height: 0.7;
+}
+
+#skills .skill_container .heading_box .resume_btn {
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  border: 1px solid grey;
+  margin: 1rem 0rem;
+}
+
+#skills .skill_container .skill_card_container {
+  width: 100%;
+}
+
+#skills .skill_container .skill_card_container .card {
+  background-color: #323440;
+  padding: 2rem 1rem;
+  margin: 1.5rem 0rem;
+  border-radius: 1rem;
+}
+
+#skills .skill_container .skill_card_container .card .name {
+  color: var(--default-grey-color);
+}
+
+#skills .skill_container .skill_card_container .card .progress_bar {
+  width: 100%;
+  height: 8px;
+  background-color: grey;
+  border-radius: 1rem;
+}
+
+#skills .skill_container .skill_card_container .card .progress_bar .bar_value {
+  width: 80%;
+  height: 8px;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+#skills .skill_container .skill_card_container .card .progress_bar .html_value {
+  width: 99%;
+}
+#skills .skill_container .skill_card_container .card .progress_bar .css_value {
+  width: 95%;
+}
+#skills
+  .skill_container
+  .skill_card_container
+  .card
+  .progress_bar
+  .javascript_value {
+  width: 86%;
+}
+#skills
+  .skill_container
+  .skill_card_container
+  .card
+  .progress_bar
+  .react_value {
+  width: 56%;
+}
+
+/* SKILLS SECTION END HERE */
+
+/* CLIENT SECTION START HERE */
+#client {
+  width: 100%;
+  /* background-color: blue; */
+  padding: 2rem 0rem;
+}
+
+#client .client_container {
+  width: 90%;
+  margin: auto;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0rem;
+}
+
+#client .client_container .card {
+  padding: 2rem;
+  /* background-color: yellow; */
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#client .client_container .card .sub_card {
+  padding: 1rem;
+}
+
+#client .client_container .card .sub_card i {
+  font-size: 3rem;
+  color: white;
+  border: 1px solid rgba(128, 128, 128, 0.364);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 0rem 1rem;
+}
+
+#client .client_container .card .sub_card h1 {
+  color: white;
+  font-size: 3rem;
+  line-height: 0.1;
+  font-weight: 300;
+}
+
+#client .client_container .card .sub_card p {
+  color: var(--default-grey-color);
+}
+/* CLIENT SECTION END HERE */
+
+/* PROJECTS SECTION START HERE */
+#projects {
+  width: 100%;
+  /* background-color: red; */
+  padding: 2rem 0rem;
+}
+
+#projects .projects_container {
+  width: 90%;
+  margin: auto;
+  /* background-color: blue; */
+}
+
+#projects .projects_container .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: aqua; */
+}
+
+#projects .projects_container .header p {
+  color: var(--default-grey-color);
+}
+
+#projects .projects_container .header h1 {
+  color: white;
+  font-size: 3rem;
+  /* line-height: 0.1; */
+  /* font-weight: 300; */
+}
+
+#projects .projects_container .header button {
+  margin: 0rem 1rem;
+  padding: 1rem 1.5rem;
+  background-color: transparent;
+  color: white;
+  border: 1px solid rgba(128, 128, 128, 0.272);
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+#projects .projects_container .card_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0rem;
+}
+
+#projects .projects_container .card_container .card {
+  padding: 1rem;
+  background-color: rgba(10, 9, 9, 0.44);
+  margin: 0rem 2rem;
+  border-radius: 1rem;
+}
+
+#projects .projects_container .card_container .card p {
+  color: var(--default-grey-color);
+}
+#projects .projects_container .card_container .card h1 {
+  color: white;
+}
+
+#projects .projects_container .card_container .card img {
+  width: 100%;
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+
+/* PROJECTS SECTION END HERE */
+
+/* FOOTER SECTION START HERE */
+#footer {
+  width: 100%;
+  /* background-color: red; */
+  padding: 2rem 0rem;
+}
+
+#footer .footer_container {
+  width: 90%;
+  margin: auto;
+  /* background-color: blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer .footer_container .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+#footer .footer_container .card .sub_card {
+  margin: 1rem;
+}
+
+#footer .footer_container .card .sub_card h1 {
+  color: white;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+#footer .footer_container .card .sub_card i {
+  color: white;
+  font-size: 2rem;
+}
+#footer .footer_container .card i {
+  color: white;
+  font-size: 2rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+/* FOOTER SECTION END HERE */
+
+/* COPYRIGHT SECTIOM START HERE */
+.copyright{
+  width: 100%;
+  padding: 2rem 0rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.153);
+}
+
+.copyright .copyright_container{
+  width: 90%;
+  margin: auto;
+}
+
+.copyright .copyright_container p{
+  text-align: center;
+  color: white;
+}
+
+.copyright .copyright_container .heart{
+  color: red;
+  font-size: 1.5rem;
+  fill: red;
+}
+/* COPYRIGHT SECTION END HERE */

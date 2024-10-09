@@ -153,14 +153,24 @@ main {
   position: relative;
   bottom: -0.5rem;
 }
-
-/* Service section */
-#services {
-  width: 90%;
-  height: 300px;
-  margin: auto;
-  /* background-color: red; */
+/* Hamburger style start */
+.hamburger_menu{
+  display: none;
 }
+
+.hamburger_menu .menu_icon img{
+  width: 40px;
+  height: 40px;
+}
+
+.hamburger_menu .menu_icon img:hover{
+  cursor: pointer;
+}
+
+
+
+/* Hamburger style end */
+
 
 /* HERO SECTION END HERE */
 
@@ -499,3 +509,86 @@ main {
   fill: red;
 }
 /* COPYRIGHT SECTION END HERE */
+
+
+
+/* Media Query STart */
+
+@media only screen and (max-width: 900px) {
+  .header_container{
+    flex-direction: column;
+  }
+
+  .user_data .user_name{
+    text-align: center;
+  }
+
+header .header_container .user_data .user_name h1{
+  text-align: center;
+  /* color: red; */
+}
+#header .header_container .user_data .user_name .user_roles {
+  padding: 1rem 0rem;
+  color: var(--default-grey-color);
+  width: 100%;
+}
+
+#navBar .nav_container .pages_nav_sec ul {
+  display: none;
+}
+#navBar .nav_container .hire_me_btn button {
+  display: none;
+}
+
+.hamburger_menu{
+  display: block;
+}
+
+
+#services .service_container .service_card_container {
+  width: 90%;
+  margin: auto;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ /* margin: 0; */
+}
+
+
+/* #services .service_container .service_card_container .service_card{
+  margin: 1rem auto;
+  width: 100%;
+  justify-content: center;
+} */
+
+#services .service_container .service_card_container .service_card {
+  background-color: #252734;
+  padding: 3rem 1.5rem;
+  width: 100%;
+  color: white;
+  border-radius: 0.5rem;
+  margin: 1rem;
+}
+
+/* #services .service_container .service_header .para{
+  text-align: center;
+} */
+#services .service_container .service_header .heading {
+  line-height: 1.4;
+  text-align: center;
+}
+
+
+#client .client_container {
+ flex-direction: column;
+}
+
+#projects .projects_container .card_container {
+ flex-direction: column;
+}
+
+#footer .footer_container{
+  flex-direction: column;
+}
+
+}
